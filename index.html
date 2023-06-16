@@ -22,7 +22,7 @@
   <body>
     <!-- Header -->
     <header class="header-page link">
-      <div class="container page-header-container">
+      <div class="container header-page-container">
 
         <nav class="page-nav">
           <a class="logo logo-text link" href="./index.html"
@@ -41,6 +41,23 @@
           </ul>
                </nav>
 
+               <address class="header-address link">
+                <ul class="header-address-list list">
+                  <li class="header-address-item list">
+                    <a
+                      class="header-address-link link"
+                      href="mailto:info@devstudio.com"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="header-address-item list">
+                    <a class="header-address-link link" href="tel:+110001111111"
+                      >+11 (000) 111-11-11</a
+                    >
+                  </li>
+                </ul>
+                      </address>
+
 <!-- burger-button -->
 
                <button type="button"
@@ -56,36 +73,19 @@
             </svg>
           </button>
                   
-                      <address class="header-address link">
-          <ul class="header-address-list list">
-            <li class="header-address-item list">
-              <a
-                class="header-address-link link"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="header-address-item list">
-              <a class="header-address-link link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-                </address>
-           
-             
-
+            
+               
       </div>
 <!-- online-menu -->
 <div class="mobile-menu js-menu-container" id="mobile-menu">
-  <div class="container mobile-menu-container">
+  <!-- <div class="container mobile-menu-container"> -->
   <button class="mobile-menu-close-btn js-close-menu">
     <svg class="mobile-menu-close-icon" width="8"  height="8" >
       <use href="./images/icons.svg#icon-menu-close"></use>
     </svg>
   
   </button>
-
+<div>
   <ul class="mobile-list-menu list">
     <li class="mobile-list-item">
       <a class="mobile-link link current" href="./index.html">Studio</a>
@@ -97,28 +97,27 @@
       <a class="mobile-link link" href="">Contacts</a>
     </li>
   </ul>
+</div>
+<div>
+  <address class="address-menu-mobile link">
+    <ul class="address-menu-mobile-list list">
+      <li class="address-menu-mobile-item list">
+        <a class="tel-menu-link link" href="tel:+110001111111"
+          >+11 (000) 111-11-11</a
+        >
+      </li>
+      <li class="address-menu-mobile-item list">
+        <a
+          class="email-menu-link link"
+          href="mailto:info@devstudio.com"
+          >info@devstudio.com</a
+        >
+      </li>
+        </ul>
+          </address>
+        
 
-
-
-<address class="address-menu-mobile link">
-  <ul class="address-menu-mobile-list list">
-    <li class="address-menu-mobile-item list">
-      <a class="tel-menu-link link" href="tel:+110001111111"
-        >+11 (000) 111-11-11</a
-      >
-    </li>
-    <li class="address-menu-mobile-item list">
-      <a
-        class="email-menu-link link"
-        href="mailto:info@devstudio.com"
-        >info@devstudio.com</a
-      >
-    </li>
-      </ul>
-        </address>
-
-
-
+        
         <ul class="social-list-menu list">
           <li class="social-list-menu-item">
             <a href="" class="social-list-link-menu">
@@ -149,21 +148,22 @@
             </a>
           </li>
         </ul>
-        </div>
-      </div>
+      <!-- </div> -->
+    </div>
+  </div>
     </header>
 
     <!-- Hero -->
     <main class="main-hero">
       <section class="hero-page" id="studio">
         <div class="container">
-          <h1 class="hero-title hero-title">Effective Solutions for Your Business</h1>
+          <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
 
       <!-- Section 1 -->
-      <!-- <section class="criteria-business">
+      <section class="criteria-business">
         <div class="container">
         <h2 class="visually-hidden">criteria</h2>
         <ul class="criteria-list list section-page-container">
@@ -224,20 +224,32 @@
           </li>
         </ul>
       </div>
-      </section> -->
+      </section>
       <!-- Section 2 -->
-      <!-- <section class="working">
+      <section class="working">
         <div class="container">
           <h2 class="title-section-working">What are we doing</h2>
           <ul class="list-foto-working list working-container">
             <li class="list-foto-item">
-              <img src="./images/img1.jpg" alt="monitor" width="360" />
+              <img 
+              srcset="./images/doing1.jpg 1x,
+              ./images/doing1@2x.jpg 2x"
+              src="./images/img1.jpg" 
+              alt="monitor" 
+              width="360" />
             </li>
             <li class="list-foto-item">
-              <img src="./images/img2.jpg" alt="phone" width="360" />
+              <img 
+              srcset="./images/doing2.jpg 1x,
+              ./images/doing2@2x.jpg 2x"
+              src="./images/img2.jpg" 
+              alt="phone" 
+              width="360" />
             </li>
             <li class="list-foto-item">
               <img
+              srcset="./images/doing3.jpg 1x,
+              ./images/doing3@2x.jpg 2x"
                 src="./images/img3.jpg"
                 alt="computer and phone"
                 width="360"
@@ -245,16 +257,18 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Section 3 -->
-      <!-- <section class="employees">
+      <section class="employees">
         <div class="container">
           <h2 class="subtitle-employees">Our Team</h2>
           <ul class="photos-employees-list list">
             <li class="photo-employees-item">
               <img
                 class="photo-employees"
-                src="./images/markguerrero.jpg"
+                srcset="./images/markguerrero-mobile.jpg 1x,
+                        ./images/markguerrero-mobile@2x.jpg 2x"
+                 src="./images/markguerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
               />
@@ -294,7 +308,12 @@
               </div>
             </li>
             <li class="photo-employees-item">
-              <img src="./images/tomford.jpg" alt="Tom Ford" width="264" />
+              <img 
+              srcset="./images/tomford-mobile.jpg 1x,
+              ./images/tom-ford-mobile@2x.jpg 2x"
+              src="./images/tomford.jpg" 
+              alt="Tom Ford" 
+              width="264" />
 
               <div class="photo-title-text">
                 <h3 class="name-employees">Tom Ford</h3>
@@ -333,6 +352,8 @@
             </li>
             <li class="photo-employees-item">
               <img
+              srcset="./images/camilaagarcia-mobile.jpg 1x,
+              ./images/camilaagarcia-mobile@2x.jpg 2x"
                 src="./images/camilagarcia.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -374,6 +395,8 @@
             </li>
             <li class="photo-employees-item">
               <img
+              srcset="./images/danielwilson-mobile.jpg 1x,
+              ./images/danielwilson-mobile@2x.jpg 2x"
                 src="./images/danielwilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -415,11 +438,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section> 
 
       <!-- Customers -->
 
-      <!-- <section class="customers">
+      <section class="customers">
         <div class="container">
           <h2 class="title-customers">Customers</h2>
           <ul class="customers-list list">
@@ -476,9 +499,9 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
     <!-- Footer -->
-    <!-- <footer class="footer-page">
+    <footer class="footer-page">
       <div class="footer-container container">
         <div class="footer-container-logo">
           <a class="footer-logo link logo-text" href="./index.html"
@@ -523,7 +546,7 @@
             </li>
           </ul>
       </div>
-      <div class="container-subscribe">
+      <div class="container-subscribe ">
         <p class="text-subscribe">Subscribe</p>
         <form class="modal-form-footer">
        
@@ -544,9 +567,9 @@
             </form>
           </div>
         </div>
-    </footer> -->
+    </footer>
 <!-- modal -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop  is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
 <svg class="icon-modal" width="8" height="8">
@@ -646,7 +669,7 @@ class="modal-form-submit">Send</button>
                 
 
                 
-                    <script src="./js/modal.js"></script> -->
+                    <script src="./js/modal.js"></script>
 
                     <script
       defer
