@@ -91,9 +91,6 @@ img {
         margin-left: auto;
         margin-right: auto;
     }
-
-
-
   }
 
 @media screen and (min-width: 768px) {
@@ -102,7 +99,6 @@ img {
        }
     
 }
-
 @media screen and (min-width: 1158px) {
     .container { 
         width: 1156px;
@@ -185,8 +181,7 @@ img {
     height: 24px;
     border: none;
     background: #E7E9FC;
-    
-        opacity: 0,1;
+    opacity: 0,1;
        padding: 0;
          border-radius: 50%;
      line-height: 0;
@@ -323,7 +318,7 @@ margin-bottom: 48px;
     .header-page {
         border-bottom: 1px solid #E7E9FC;
         box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-
+        padding: 0;
 }
 .header-page-container{
     display: flex;
@@ -331,9 +326,7 @@ margin-bottom: 48px;
     justify-content: space-between;
     max-height: 72px;
 }
-.header-page{
-    padding: 0;
-}
+
 
 .page-nav {
     display: flex;
