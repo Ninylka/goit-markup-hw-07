@@ -54,7 +54,7 @@ ul {
 
 img {
     display: block;
-    width: 100%;
+   
     max-width: 100%;
     height: auto;
 }
@@ -641,6 +641,7 @@ margin-bottom: 36px;
 .criteria-business {
     padding-top: 96px;
     padding-bottom: 96px;
+  
 
 }
 .visually-hidden {
@@ -837,7 +838,9 @@ display: none;
 
 /**============== Section 3 =================*/
 .employees>.container{
-    max-width: 584px;
+    max-width: 294px;
+    margin-left: auto;
+    margin-right: auto;
 }
   
 
@@ -930,7 +933,10 @@ display: none;
 }
 @media screen and (min-width: 768px){
 
-
+    .employees>.container{
+        max-width: 584px;
+    }
+      
 .photos-employees-list {
  
     gap: 64px 24px;
@@ -973,8 +979,12 @@ display: none;
 
 /*------------------ Customers --------------*/
 
+
+
+
+
 .customers>.container{
-    max-width: 582px;
+    max-width: 426px;
 }
 .customers{
 padding-top: 96px;
@@ -1035,6 +1045,9 @@ color : var(--ocean-color);
     fill: currentColor;
 }
 @media screen and (min-width: 768px){
+    .customers>.container{
+        max-width: 582px;
+    }
     .customers-list-item{
                    width: calc((100% - 48px)/3);
            
@@ -1228,6 +1241,7 @@ transition: transform var(--transition);
       flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+   
       }
 .logo-footer {
     color: var(--second-light-text-color);
@@ -1241,7 +1255,8 @@ transition: transform var(--transition);
     color: var(--second-light-text-color);
     max-width: 264px;
     /* margin-right: auto; */
-    margin-bottom: 72px;
+
+    /* margin-bottom: 72px; */
 
 }
 
@@ -1251,9 +1266,10 @@ transition: transform var(--transition);
     margin-bottom: 16px;
     text-align: center;
     color: var(--third-text-color);
+    
              }
 
-
+             
 
 
 .title-social-media{
@@ -1285,7 +1301,7 @@ margin-bottom: 16px;
     background-color: var(--third-text-color);
     fill:var(--fill-white);
     transition: background-color var(--transition);
-    margin-bottom: 72px;
+    /* margin-bottom: 72px; */
 }
 .footer-social-list-link:hover,
 .footer-social-list-link:focus{
