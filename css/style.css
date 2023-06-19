@@ -1333,9 +1333,9 @@ align-items: center;
      
      }
 
-     .container-subscribe{
+     /* .container-subscribe{
         width: 100%;
-     }
+     } */
 
      .subscribe-email{
         width: 100%;
@@ -1397,7 +1397,11 @@ align-items: center;
      }
 
 
-
+     @media screen and (max-width: 767px) {
+        .container-subscribe{
+           width: 100%;
+        }
+       }
 @media screen and (min-width: 768px) {
     .footer-page>.container{
         max-width: 584px;
@@ -1453,9 +1457,7 @@ align-items: center;
                       
                         justify-content: flex-start;
                           }
-                          .container-subscribe{
-                            width: auto;
-                         }
+                          
 }
 
 @media screen and (min-width: 1158px){
